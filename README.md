@@ -3,7 +3,7 @@
 ## Overview
 This is a full-stack To-Do List application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The application allows users to add, edit, delete, and mark tasks as complete or incomplete. Tasks are displayed in two sections: Active Tasks and Completed Tasks. A Dark Mode toggle is also included for better user experience.
 
-![To-Do List Application Screenshot](images/screenshot.png)
+![To-Do List Application Screenshot](https://github.com/07themiya/todo-list/blob/9f1b65dc2cea323e58185a638aecf9c6f1a13ce1/screenshot.png)
 
 ---
 
