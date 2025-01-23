@@ -71,6 +71,10 @@ This is a full-stack To-Do List application built using the MERN stack (MongoDB,
    - Active tasks have a checkbox to mark them as complete.
    - Completed tasks can be toggled back to active if needed.
 
+### 3. **Search Bar**
+   - A search bar allows users to dynamically filter tasks by title.
+   - The filtered tasks are displayed in real-time as the user types in the search query.
+
 ---
 
 ## How to Use
