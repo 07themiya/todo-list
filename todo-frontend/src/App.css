@@ -1,0 +1,208 @@
+/* Define light mode variables */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --task-item-background: #f9f9f9;
+  --button-background: #4CAF50;
+  --button-text-color: white;
+  --button-hover-background: #45a049;
+}
+
+/* Define dark mode variables */
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --task-item-background: #1e1e1e;
+  --button-background: #388e3c;
+  --button-text-color: white;
+  --button-hover-background: #2e7d32;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+.add-task-form {
+  margin-bottom: 20px;
+}
+
+.add-task-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-task-form button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task-form button:hover {
+  background-color: var(--button-hover-background);
+}
+
+@media (min-width: 600px) {
+  .App {
+    width: 600px; /* Fixed width for wider screens */
+    margin: 0 auto; /* Center the content */
+  }
+
+  .add-task-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .add-task-form input {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .add-task-form button {
+    width: auto;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+
+.task-list {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--task-item-background);
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-item span {
+  flex: 1;
+  color: var(--text-color);
+}
+
+.task-item input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.task-item button {
+  margin-left: 10px;
+  width: 80px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+}
+
+.task-item button.edit {
+  background-color: #2196F3; /* Blue color for "Edit" button */
+}
+
+.task-item button.edit:hover {
+  background-color: #0b7dda; /* Slightly darker blue on hover */
+}
+
+.task-item button.delete {
+  background-color: #f44336; /* Red color for "Delete" button */
+}
+
+.task-item button.delete:hover {
+  background-color: #da190b; /* Slightly darker red on hover */
+}
+
+.task-item button.save {
+  background-color: #4CAF50; /* Green color for "Save" button */
+}
+
+.task-item button.save:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+@media (max-width: 600px) {
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-item button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .task-item input[type="text"] {
+    margin-top: 5px;
+  }
+}
+
+.App h2 {
+  margin-top: 20px;
+  color: var(--text-color);
+  text-align: left;
+  padding-left: 10%;
+}
+
+.toggle-theme {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-theme:hover {
+  background-color: var(--button-hover-background);
+}
+
+.search-bar {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--task-item-background);
+  color: var(--text-color);
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: var(--button-background);
+}
+
